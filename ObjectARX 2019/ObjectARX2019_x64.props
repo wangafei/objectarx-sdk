@@ -6,25 +6,25 @@
 
 
   <PropertyGroup Label="UserMacros">
-    <FsAcadVer>2019</FsAcadVer>
-    <FsArxVer>23.0</FsArxVer>
+    <ObjectArxSDKAcadVer>2019</ObjectArxSDKAcadVer>
+    <ObjectArxSDKArxVer>23.0</ObjectArxSDKArxVer>
   </PropertyGroup>
   
   <PropertyGroup>
-    <AcadExePath>C:\Program Files\Autodesk\AutoCAD $(FsAcadVer)\acad.exe</AcadExePath>
+    <AcadExePath>C:\Program Files\Autodesk\AutoCAD $(ObjectArxSDKAcadVer)\acad.exe</AcadExePath>
   </PropertyGroup>
   
 <PropertyGroup>
-    <BuildMode Condition="$(Configuration)=='$(FsAcadVer)_Debug' or $(Configuration)=='$(FsArxVer)_Debug' or $(Configuration)=='2019_Debug' or $(Configuration)=='2021_Debug' or $(Configuration)=='debug' ">debug</BuildMode>
-    <BuildMode Condition="$(Configuration)=='$(FsAcadVer)_Release' or $(Configuration)=='$(FsArxVer)_Release' or $(Configuration)=='2019_Release' or $(Configuration)=='2021_Release' or $(Configuration)=='release'">release</BuildMode>
+    <BuildMode Condition="$(Configuration)=='$(ObjectArxSDKAcadVer)_Debug' or $(Configuration)=='$(ObjectArxSDKArxVer)_Debug' or $(Configuration)=='2019_Debug' or $(Configuration)=='2021_Debug' or $(Configuration)=='debug' ">debug</BuildMode>
+    <BuildMode Condition="$(Configuration)=='$(ObjectArxSDKAcadVer)_Release' or $(Configuration)=='$(ObjectArxSDKArxVer)_Release' or $(Configuration)=='2019_Release' or $(Configuration)=='2021_Release' or $(Configuration)=='release'">release</BuildMode>
     <LinkIncremental Condition="$(BuildMode) == 'debug'">true</LinkIncremental>
     <LinkIncremental Condition="$(BuildMode) == 'release'">false</LinkIncremental>
   </PropertyGroup>
   
   <PropertyGroup>
-    <IncludePath>$(FsArxSdkDir)ObjectARX $(FsAcadVer)\inc;$(FsArxSdkDir)ObjectARX $(FsAcadVer)\inc-x64;$(IncludePath)</IncludePath>
-    <LibraryPath>$(FsArxSdkDir)ObjectARX $(FsAcadVer)\lib-x64;$(LibraryPath)</LibraryPath>
-    <OutDir>$(SolutionDir)Build\$(Platform)$(Configuration)$(FsAcadVer)\</OutDir>
+    <IncludePath>$(objectarx-sdk)ObjectARX $(ObjectArxSDKAcadVer)\inc;$(objectarx-sdk)ObjectARX $(ObjectArxSDKAcadVer)\inc-x64;$(IncludePath)</IncludePath>
+    <LibraryPath>$(objectarx-sdk)ObjectARX $(ObjectArxSDKAcadVer)\lib-x64;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)Build\$(Platform)$(Configuration)$(ObjectArxSDKAcadVer)\</OutDir>
   </PropertyGroup>
 
   <ItemDefinitionGroup>
@@ -33,7 +33,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions Condition="$(BuildMode) == 'debug'">FSDEBUG</PreprocessorDefinitions>
       <PreprocessorDefinitions Condition="$(BuildMode) == 'release'">NDEBUG</PreprocessorDefinitions>
-      <PreprocessorDefinitions>_UNICODE;UNICODE;_WIN64;_WINDOWS;CAD_PLATFORM=$(FsAcadVer);_AFXEXT;_AFXDLL;_ACRXAPP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_UNICODE;UNICODE;_WIN64;_WINDOWS;CAD_PLATFORM=$(ObjectArxSDKAcadVer);_AFXEXT;_AFXDLL;_ACRXAPP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
@@ -44,9 +44,9 @@
     
     <Link>
       <AdditionalLibraryDirectories></AdditionalLibraryDirectories>
-      <ProgramDatabaseFile>$(SolutionDir)..\pdb\CAD$(FsAcadVer)$(Platform)\$(TargetName).pdb</ProgramDatabaseFile>
+      <ProgramDatabaseFile>$(SolutionDir)..\pdb\CAD$(ObjectArxSDKAcadVer)$(Platform)\$(TargetName).pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
-      <ImportLibrary>$(SolutionDir)..\lib\CAD$(FsAcadVer)$(Platform)\$(TargetName).lib</ImportLibrary>
+      <ImportLibrary>$(SolutionDir)..\lib\CAD$(ObjectArxSDKAcadVer)$(Platform)\$(TargetName).lib</ImportLibrary>
       <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
       <OptimizeReferences Condition="$(BuildMode) == 'debug'">false</OptimizeReferences>
       <EnableCOMDATFolding Condition="$(BuildMode) == 'debug'">false</EnableCOMDATFolding>

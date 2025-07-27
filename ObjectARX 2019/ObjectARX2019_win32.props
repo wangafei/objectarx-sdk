@@ -9,13 +9,13 @@
   </PropertyGroup>
  
   <PropertyGroup Label="UserMacros">
-    <FsAcadVer>2019</FsAcadVer>
-    <FsArxVer>23.0</FsArxVer>
+    <ObjectArxSDKAcadVer>2019</ObjectArxSDKAcadVer>
+    <ObjectArxSDKArxVer>23.0</ObjectArxSDKArxVer>
   </PropertyGroup>
   
   <PropertyGroup>
-    <IncludePath>$(FsArxSdkDir)ObjectARX 2019\inc;$(FsArxSdkDir)ObjectARX 2019\inc-win32;$(IncludePath)</IncludePath>
-    <LibraryPath>$(FsArxSdkDir)ObjectARX 2019\lib-win32;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(objectarx-sdk)ObjectARX 2019\inc;$(objectarx-sdk)ObjectARX 2019\inc-win32;$(IncludePath)</IncludePath>
+    <LibraryPath>$(objectarx-sdk)ObjectARX 2019\lib-win32;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
 
 </Project>
