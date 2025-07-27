@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets">
+    <Import Project="inc\arx.props" />
+  </ImportGroup>
+
+  <PropertyGroup> 
+        <AcadExePath>C:\Program Files (x86)\Autodesk\AutoCAD 2019\acad.exe</AcadExePath>
+  </PropertyGroup>
+ 
+  <PropertyGroup Label="UserMacros">
+    <FsAcadVer>2019</FsAcadVer>
+    <FsArxVer>23.0</FsArxVer>
+  </PropertyGroup>
+  
+  <PropertyGroup>
+    <IncludePath>$(FsArxSdkDir)ObjectARX 2019\inc;$(FsArxSdkDir)ObjectARX 2019\inc-win32;$(IncludePath)</IncludePath>
+    <LibraryPath>$(FsArxSdkDir)ObjectARX 2019\lib-win32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+
+</Project>

@@ -1,0 +1,11 @@
+以AutoCAD2016的SDK为例:
+arx:
+accore.lib;acad.lib;acui20.lib;adui20.lib
+
+dbx:
+ac1st20.lib;acdb20.lib;acge20.lib;acgiapi.lib;acISMobj20.lib;rxapi.lib
+
+all:
+rxapi.lib acdb20.lib acge20.lib acgiapi.lib acISMobj20.lib acad.lib adui20.lib acui20.lib version.lib accore.lib ac1st20.lib AcDrawBridge.lib
+
+因此:对于特殊项目:如屏幕菜单,单纯依赖"默认的属性表"这些Lib是不全的.

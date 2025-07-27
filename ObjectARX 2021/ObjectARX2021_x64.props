@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets">
+    <Import Project="inc\arx.props" />
+  </ImportGroup>
+
+
+  <PropertyGroup Label="UserMacros">
+    <FsAcadVer>2021</FsAcadVer>
+    <FsArxVer>24.0</FsArxVer>
+  </PropertyGroup>
+  
+  <PropertyGroup>
+    <AcadExePath>C:\Program Files\Autodesk\AutoCAD $(FsAcadVer)\acad.exe</AcadExePath>
+  </PropertyGroup>
+  
+<PropertyGroup>
+    <BuildMode Condition="$(Configuration)=='$(FsAcadVer)_Debug' or $(Configuration)=='$(FsArxVer)_Debug' or $(Configuration)=='2019_Debug' or $(Configuration)=='2021_Debug' or $(Configuration)=='debug' ">debug</BuildMode>
+    <BuildMode Condition="$(Configuration)=='$(FsAcadVer)_Release' or $(Configuration)=='$(FsArxVer)_Release' or $(Configuration)=='2019_Release' or $(Configuration)=='2021_Release' or $(Configuration)=='release'">release</BuildMode>
+    <LinkIncremental Condition="$(BuildMode) == 'debug'">true</LinkIncremental>
+    <LinkIncremental Condition="$(BuildMode) == 'release'">false</LinkIncremental>
+  </PropertyGroup>
+  
+  <PropertyGroup>
+    <IncludePath>$(FsArxSdkDir)ObjectARX $(FsAcadVer)\inc;$(FsArxSdkDir)ObjectARX $(FsAcadVer)\inc-x64;$(IncludePath)</IncludePath>
+    <LibraryPath>$(FsArxSdkDir)ObjectARX $(FsAcadVer)\lib-x64;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)Build\$(Platform)$(Configuration)$(FsAcadVer)\</OutDir>
+  </PropertyGroup>
+
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <SDLCheck>true</SDLCheck>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions Condition="$(BuildMode) == 'debug'">FSDEBUG</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="$(BuildMode) == 'release'">NDEBUG</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_UNICODE;UNICODE;_WIN64;_WINDOWS;CAD_PLATFORM=$(FsAcadVer);_AFXEXT;_AFXDLL;_ACRXAPP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <Optimization Condition="$(BuildMode) == 'debug'">Disabled</Optimization>
+      <MinimalRebuild>false</MinimalRebuild>
+      <AdditionalIncludeDirectories></AdditionalIncludeDirectories>
+    </ClCompile>
+    
+    <Link>
+      <AdditionalLibraryDirectories></AdditionalLibraryDirectories>
+      <ProgramDatabaseFile>$(SolutionDir)..\pdb\CAD$(FsAcadVer)$(Platform)\$(TargetName).pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(SolutionDir)..\lib\CAD$(FsAcadVer)$(Platform)\$(TargetName).lib</ImportLibrary>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+      <OptimizeReferences Condition="$(BuildMode) == 'debug'">false</OptimizeReferences>
+      <EnableCOMDATFolding Condition="$(BuildMode) == 'debug'">false</EnableCOMDATFolding>
+      <GenerateDebugInformation Condition="$(BuildMode) == 'debug'">true</GenerateDebugInformation>
+      <AdditionalOptions>/ignore:4099 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+
+  </ItemDefinitionGroup>
+
+  
+</Project>
