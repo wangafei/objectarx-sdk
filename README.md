@@ -1,9 +1,7 @@
 # objectarx-sdk
 cad二次开发SDK
 
-objectarx-sdk
+增加环境变量：
 
-  <PropertyGroup Label="UserMacros">
-    <ObjectArxSDKAcadVer>2021</ObjectArxSDKAcadVer>
-    <ObjectArxSDKArxVer>24.0</ObjectArxSDKArxVer>
-  </PropertyGroup>
+objectarx-sdk
+x:x\objectarx-sdk
