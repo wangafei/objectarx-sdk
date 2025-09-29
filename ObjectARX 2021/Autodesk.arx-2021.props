@@ -34,7 +34,7 @@
 		<Import Condition="'$(ArxAppType)'=='arx' or '$(ArxAppType)'=='arxnet'" Project="$(ArxSdkDir)\inc\arx.props" />
 		<Import Condition="'$(Configuration)'=='Release'" Project="$(ArxSdkDir)\inc\rxsdk_Releasecfg.props" />
 		<Import Condition="'$(Configuration)'=='Debug'" Project="$(ArxSdkDir)\inc\rxsdk_Debugcfg.props" />
-		<Import Condition="'$(ArxAppType)'=='dbxnet' or '$(ArxAppType)'=='crxnet' or '$(ArxAppType)'=='arxnet'" Project="Autodesk.arx-2020-net.props" />
+		<Import Condition="'$(ArxAppType)'=='dbxnet' or '$(ArxAppType)'=='crxnet' or '$(ArxAppType)'=='arxnet'" Project="Autodesk.arx-2021-net.props" />
 	</ImportGroup>
 	
 	<PropertyGroup>
