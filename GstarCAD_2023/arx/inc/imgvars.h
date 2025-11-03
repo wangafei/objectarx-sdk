@@ -1,0 +1,13 @@
+﻿/////////////////////////////////////////////////////////////////////////////////////////
+//
+// Please refer to "COPYRIGHT.md" for the relevant copyright statement of this software.
+//
+/////////////////////////////////////////////////////////////////////////////////////////
+//
+#pragma once
+#include "../../inc/imgvars.h"
+#include "dbmain.h"
+#include "imgdef.h"
+
+#define	AcDbRasterVariables 	GcDbRasterVariables
+#define	AcDbDatabase 	GcDbDatabase

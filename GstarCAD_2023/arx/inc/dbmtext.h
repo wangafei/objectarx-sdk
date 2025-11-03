@@ -1,0 +1,13 @@
+﻿/////////////////////////////////////////////////////////////////////////////////////////
+//
+// Please refer to "COPYRIGHT.md" for the relevant copyright statement of this software.
+//
+/////////////////////////////////////////////////////////////////////////////////////////
+//
+#pragma once
+#include "../../inc/dbmtext.h"
+#include "dbmain.h"
+
+#define AcDbMTextFragment GcDbMTextFragment
+#define AcDbMTextEnum GcDbMTextEnum
+#define AcDbMText GcDbMText

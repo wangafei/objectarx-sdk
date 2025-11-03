@@ -1,0 +1,12 @@
+﻿/////////////////////////////////////////////////////////////////////////////////////////
+//
+// Please refer to "COPYRIGHT.md" for the relevant copyright statement of this software.
+//
+/////////////////////////////////////////////////////////////////////////////////////////
+//
+#pragma once
+#include "../../inc/GdCharFmt.h"
+#include "adesk.h"
+#include "acbasedefs.h"
+#define AdCharFormatter  GdCharFormatter
+#define AdCharFmt_Assert GdCharFmt_Assert

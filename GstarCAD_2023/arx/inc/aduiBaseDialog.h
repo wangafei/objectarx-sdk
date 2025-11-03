@@ -1,0 +1,12 @@
+﻿/////////////////////////////////////////////////////////////////////////////////////////
+//
+// Please refer to "COPYRIGHT.md" for the relevant copyright statement of this software.
+//
+/////////////////////////////////////////////////////////////////////////////////////////
+//
+#pragma once
+#include "../../inc/gduiBaseDialog.h"
+
+#define CAdUiBaseDialog CGdUiBaseDialog
+#define OnAdUiTimer OnGdUiTimer
+//#define _ADESK_MAC_  _GSOFT_MAC_

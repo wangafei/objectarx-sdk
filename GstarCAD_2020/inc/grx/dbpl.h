@@ -1,0 +1,10 @@
+#pragma once
+#include "gcadstd.h"
+#include "dbmain.h"
+#include "dbboiler.h"
+#include "../DbPolyline.h"
+#include "../Ge/GeLineSeg2d.h"
+#include "../Ge/GeLineSeg3d.h"
+#include "../Ge/GeCircArc2d.h"
+#include "../Ge/GeCircArc3d.h"
+#include "../Ge/GePoint2dArray.h"

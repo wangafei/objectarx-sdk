@@ -1,0 +1,13 @@
+﻿/////////////////////////////////////////////////////////////////////////////////////////
+//
+// Please refer to "COPYRIGHT.md" for the relevant copyright statement of this software.
+//
+/////////////////////////////////////////////////////////////////////////////////////////
+//
+#pragma once
+#include "../../inc/opmimp.h"
+#include "AdAChar.h"
+#include "acpi.h"
+
+#define ACAD_OPMPROPMAP_ENTRY GCAD_OPMPROPMAP_ENTRY
+#define IAcPiCommandButton IGcPiCommandButton

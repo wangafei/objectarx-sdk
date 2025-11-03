@@ -1,0 +1,12 @@
+﻿/////////////////////////////////////////////////////////////////////////////////////////
+//
+// Please refer to "COPYRIGHT.md" for the relevant copyright statement of this software.
+//
+/////////////////////////////////////////////////////////////////////////////////////////
+//
+#pragma once
+#include "../../inc-x64/gcpi.h"
+#define IAcPiPropertyInspector IGcPiPropertyInspector
+#define IAcPiCategorizeProperties IGcPiCategorizeProperties
+#define IAcPiPropertyDisplay IGcPiPropertyDisplay
+

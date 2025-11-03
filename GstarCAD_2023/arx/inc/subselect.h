@@ -1,0 +1,12 @@
+﻿/////////////////////////////////////////////////////////////////////////////////////////
+//
+// Please refer to "COPYRIGHT.md" for the relevant copyright statement of this software.
+//
+/////////////////////////////////////////////////////////////////////////////////////////
+//
+#pragma once
+#include "../../inc/subselect.h"
+#include "acedinpt.h"
+
+#define AcEdSubSelectFilter GcEdSubSelectFilter
+#define	AcDbFullSubentPathArray 	GcDbFullSubentPathArray

@@ -1,0 +1,12 @@
+﻿/////////////////////////////////////////////////////////////////////////////////////////
+//
+// Please refer to "COPYRIGHT.md" for the relevant copyright statement of this software.
+//
+/////////////////////////////////////////////////////////////////////////////////////////
+//
+#pragma once
+#include "../../inc/gcgiparameter.h"
+#include "rxcopyonwriteobject.h"
+
+#define AcGiParameter GcGiParameter
+#define AcGiParameterImp GcGiParameterImp

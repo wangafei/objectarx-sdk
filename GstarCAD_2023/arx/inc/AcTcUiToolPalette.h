@@ -1,0 +1,12 @@
+﻿/////////////////////////////////////////////////////////////////////////////////////////
+//
+// Please refer to "COPYRIGHT.md" for the relevant copyright statement of this software.
+//
+/////////////////////////////////////////////////////////////////////////////////////////
+//
+#pragma once
+#include "../../inc/GcTcUiToolPalette.h"
+#include "AcTcUI.h"
+#include "aduiPalette.h"
+#include "AcTcUiPaletteView.h"
+#define CAcTcUiToolPalette  CGcTcUiToolPalette

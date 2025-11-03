@@ -1,0 +1,14 @@
+﻿/////////////////////////////////////////////////////////////////////////////////////////
+//
+// Please refer to "COPYRIGHT.md" for the relevant copyright statement of this software.
+//
+/////////////////////////////////////////////////////////////////////////////////////////
+//
+#pragma once
+
+#include "GcPlDSDData.h"
+
+class GcPlPlotConfig;
+
+void gcplPublishExecute(GcPlDSDData dsdDataObj, GcPlPlotConfig* pConfig,
+  bool bShowPlotProgress);

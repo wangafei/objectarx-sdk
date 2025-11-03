@@ -1,0 +1,11 @@
+﻿/////////////////////////////////////////////////////////////////////////////////////////
+//
+// Please refer to "COPYRIGHT.md" for the relevant copyright statement of this software.
+//
+/////////////////////////////////////////////////////////////////////////////////////////
+//
+#pragma once
+#include "../../inc/GcFStream.h"
+#define AcIfstream GcIfstream
+#define AcOfstream GcOfstream
+#define AcFStream_curLocale GcFStream_curLocale

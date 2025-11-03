@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1401
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SimplePalette", "SimplePalette.vcxproj", "{591FC993-828D-45C5-8730-F0A7D466C340}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{591FC993-828D-45C5-8730-F0A7D466C340}.Debug|Win32.ActiveCfg = Debug|Win32
+		{591FC993-828D-45C5-8730-F0A7D466C340}.Debug|Win32.Build.0 = Debug|Win32
+		{591FC993-828D-45C5-8730-F0A7D466C340}.Debug|x64.ActiveCfg = Debug|x64
+		{591FC993-828D-45C5-8730-F0A7D466C340}.Debug|x64.Build.0 = Debug|x64
+		{591FC993-828D-45C5-8730-F0A7D466C340}.Release|Win32.ActiveCfg = Release|Win32
+		{591FC993-828D-45C5-8730-F0A7D466C340}.Release|Win32.Build.0 = Release|Win32
+		{591FC993-828D-45C5-8730-F0A7D466C340}.Release|x64.ActiveCfg = Release|x64
+		{591FC993-828D-45C5-8730-F0A7D466C340}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0F9A0074-7799-4A74-9C64-AA1A81E37CE2}
+	EndGlobalSection
+EndGlobal

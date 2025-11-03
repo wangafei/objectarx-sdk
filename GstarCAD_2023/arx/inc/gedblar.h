@@ -1,0 +1,14 @@
+﻿/////////////////////////////////////////////////////////////////////////////////////////
+//
+// Please refer to "COPYRIGHT.md" for the relevant copyright statement of this software.
+//
+/////////////////////////////////////////////////////////////////////////////////////////
+//
+#pragma once
+#include "../../inc/gedblar.h"
+#include "adesk.h"
+#include "assert.h"
+#include "acarray.h"
+
+#define	AcArray GcArray
+#define	AcGeDoubleArray GcGeDoubleArray

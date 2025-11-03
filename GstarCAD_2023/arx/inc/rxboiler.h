@@ -1,0 +1,41 @@
+﻿/////////////////////////////////////////////////////////////////////////////////////////
+//
+// Please refer to "COPYRIGHT.md" for the relevant copyright statement of this software.
+//
+/////////////////////////////////////////////////////////////////////////////////////////
+//
+#pragma once
+#include "../../inc/rxboiler.h"
+#include "AdAChar.h"
+#include "rxnames.h"
+#include "acbasedefs.h"
+
+#define AcDbEntity GcDbEntity
+#define AcRxObject GcRxObject
+#define AcRxClass GcRxClass
+#define acrxFindAcRxClass gcrxFindGcRxClass
+#define acrxQueueClassForInitialization gcrxQueueClassForInitialization
+#define acrxInstantiateClass gcrxInstantiateClass
+#define acrx_abort gcrx_abort
+#define ACRX_STATIC_CHECK GCRX_STATIC_CHECK
+#define ACRX_AUTO_INIT_QUEUE_EXPR GCRX_AUTO_INIT_QUEUE_EXPR
+#define ACRX_AUTO_INIT GCRX_AUTO_INIT
+#define ACRX_AUTO_INIT_DEFAULT GCRX_AUTO_INIT_DEFAULT
+#define ACRX_DEFINE_GPDESC GCRX_DEFINE_GPDESC
+#define ACRX_DECLARE_MEMBERS_EXPIMP GCRX_DECLARE_MEMBERS_EXPIMP
+#define ACRX_EMPTY GCRX_EMPTY
+#define ACRX_DECLARE_MEMBERS GCRX_DECLARE_MEMBERS
+#define ACRX_DEFINE_MEMBERS_WORKER GCRX_DEFINE_MEMBERS_WORKER
+#define ACRX_DEFINE_MEMBERS GCRX_DEFINE_MEMBERS
+#define ACRX_NO_CONS_DEFINE_MEMBERS_WORKER GCRX_NO_CONS_DEFINE_MEMBERS_WORKER
+#define ACRX_NO_CONS_DEFINE_MEMBERS GCRX_NO_CONS_DEFINE_MEMBERS
+#define ACRX_NO_CONS_DEFINE_MEMBERS_AUTO GCRX_NO_CONS_DEFINE_MEMBERS_AUTO
+#define ACRX_NO_CONS_DEFINE_MEMBERS_WITH_PROPERTIES_WORKER GCRX_NO_CONS_DEFINE_MEMBERS_WITH_PROPERTIES_WORKER
+#define ACRX_NO_CONS_DEFINE_MEMBERS_WITH_PROPERTIES GCRX_NO_CONS_DEFINE_MEMBERS_WITH_PROPERTIES
+#define ACRX_NO_CONS_DEFINE_MEMBERS_WITH_PROPERTIES_AUTO GCRX_NO_CONS_DEFINE_MEMBERS_WITH_PROPERTIES_AUTO
+#define ACRX_CONS_DEFINE_MEMBERS_WORKER GCRX_CONS_DEFINE_MEMBERS_WORKER
+#define ACRX_CONS_DEFINE_MEMBERS GCRX_CONS_DEFINE_MEMBERS
+#define ACRX_CONS_DEFINE_MEMBERS_AUTO GCRX_CONS_DEFINE_MEMBERS_AUTO
+#define ACRX_DXF_DEFINE_MEMBERS GCRX_DXF_DEFINE_MEMBERS
+#define ACRX_DXF_DEFINE_MEMBERS_WITH_PROPERTIES GCRX_DXF_DEFINE_MEMBERS_WITH_PROPERTIES
+#define newAcRxClass newGcRxClass

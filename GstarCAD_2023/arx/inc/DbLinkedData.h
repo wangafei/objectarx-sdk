@@ -1,0 +1,13 @@
+﻿/////////////////////////////////////////////////////////////////////////////////////////
+//
+// Please refer to "COPYRIGHT.md" for the relevant copyright statement of this software.
+//
+/////////////////////////////////////////////////////////////////////////////////////////
+//
+#pragma once
+#include "AcValue.h"
+#include "DbDataLink.h"
+#include "../../inc/DbLinkedData.h"
+
+#define AcDbLinkedData GcDbLinkedData
+#define AcDbDataArray GcDbDataArray

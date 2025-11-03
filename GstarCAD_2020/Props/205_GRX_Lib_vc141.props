@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30306.1</_ProjectFileVersion>
+    <_PropertySheetDisplayName>Sdk ZRX</_PropertySheetDisplayName>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Link>
+      <AdditionalLibraryDirectories>..\..\..\3rdparty\GstarCAD_2020_GRXSDK\lib-x86;..\..\..\..\3rdparty\GstarCAD_2020_GRXSDK\lib-x86;..\..\..\..\..\3rdparty\GstarCAD_2020_GRXSDK\lib-x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <ResourceOutputFileName>$(IntDir)%(Filename).res</ResourceOutputFileName>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+</Project>

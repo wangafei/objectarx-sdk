@@ -1,0 +1,19 @@
+#pragma once
+
+#define ACRX_CONS_DEFINE_MEMBERS              GCRX_CONS_DEFINE_MEMBERS
+#define GCRX_CONS_DEFINE_MEMBERS              ODRX_CONS_DEFINE_MEMBERS2
+#define ACRX_DEFINE_MEMBERS(ClassName)        GCRX_CONS_DEFINE_MEMBERS(ClassName,AcRxObject,0)
+
+#define ACRX_DECLARE_MEMBERS                  GCRX_DECLARE_MEMBERS
+#define GCRX_DECLARE_MEMBERS                  ODRX_DECLARE_MEMBERS
+#define ACRX_NO_CONS_DEFINE_MEMBERS           GCRX_NO_CONS_DEFINE_MEMBERS
+#define GCRX_NO_CONS_DEFINE_MEMBERS           ODRX_NO_CONS_DEFINE_MEMBERS
+#define ACRX_DXF_DEFINE_MEMBERS               GCRX_DXF_DEFINE_MEMBERS
+#define GCRX_DXF_DEFINE_MEMBERS               ODRX_DXF_CONS_DEFINE_MEMBERS
+#define ACRX_STATIC_CHECK                     GCRX_STATIC_CHECK
+#define GCRX_STATIC_CHECK                     ODRX_STATIC_CHECK
+
+#include "AdAChar.h"
+#include "rxnames.h"
+#include "../RxObject.h"
+

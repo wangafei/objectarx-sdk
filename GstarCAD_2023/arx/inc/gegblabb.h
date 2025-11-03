@@ -1,0 +1,13 @@
+﻿/////////////////////////////////////////////////////////////////////////////////////////
+//
+// Please refer to "COPYRIGHT.md" for the relevant copyright statement of this software.
+//
+/////////////////////////////////////////////////////////////////////////////////////////
+//
+#pragma once
+#include "../../inc/gegblabb.h"
+
+#include "gegbl.h"
+#define AcGeXConfig GcGeXConfig
+#define AcGeError GcGeError
+#define AcGeIntersectError GcGeIntersectError

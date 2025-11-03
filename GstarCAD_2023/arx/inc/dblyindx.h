@@ -1,0 +1,12 @@
+﻿/////////////////////////////////////////////////////////////////////////////////////////
+//
+// Please refer to "COPYRIGHT.md" for the relevant copyright statement of this software.
+//
+/////////////////////////////////////////////////////////////////////////////////////////
+//
+#pragma once
+#include "../../inc/dblyindx.h"
+#include "dbindex.h"
+
+#define AcDbLayerIndex GcDbLayerIndex
+#define AcDbLayerIndexIterator GcDbLayerIndexIterator

@@ -1,0 +1,13 @@
+﻿/////////////////////////////////////////////////////////////////////////////////////////
+//
+// Please refer to "COPYRIGHT.md" for the relevant copyright statement of this software.
+//
+/////////////////////////////////////////////////////////////////////////////////////////
+//
+#pragma once
+#include "../../inc/gds_db.h"
+#ifndef DISABLE_OLD_ADS_NAMES
+#include "adsmigr.h"
+#endif  // DISABLE_OLD_ADS_NAMES
+#include "acdbads.h"
+#include "acutads.h"

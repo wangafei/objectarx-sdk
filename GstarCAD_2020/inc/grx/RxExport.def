@@ -1,0 +1,12 @@
+
+EXPORTS
+
+gcrxEntryPoint		PRIVATE
+
+;;gcrxGetApiVersion	PRIVATE
+
+;; OdRxModule* odrxCreateModuleObject(HMODULE& hModule)
+odrxCreateModuleObject
+
+;; void odrxGetAPIVersion(int& nMajorVersion, int& nMinorVersion,int& nMajorBuildVersion, int& nMinorBuildVersion)
+odrxGetAPIVersion

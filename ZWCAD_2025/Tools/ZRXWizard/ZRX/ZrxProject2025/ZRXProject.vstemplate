@@ -1,0 +1,39 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>ZRX project for ZWCAD2025</Name>
+    <Description>Create a ZRX project for ZWCAD2025.</Description>
+    <ProjectType>VC</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>ZrxProject</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>ZRX.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="$projectname$.vcxproj" File="ZrxProject.vcxproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="$projectname$.vcxproj.filters">ZrxProject.vcxproj.filters</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="helloworld.cpp">helloworld.cpp</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="pch.cpp">pch.cpp</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="rxentrypoint.cpp">rxentrypoint.cpp</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$projectname$.cpp">ZrxProject.cpp</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$projectname$.def">ZrxProject.def</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="framework.h">framework.h</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="helloworld.h">helloworld.h</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="pch.h">pch.h</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Resource.h">Resource.h</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="targetver.h">targetver.h</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$projectname$.h">ZrxProject.h</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$projectname$.rc">ZrxProject.rc</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$projectname$.rc2">RES\ZrxProject.rc2</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="dllmain.cpp">dllmain.cpp</ProjectItem>
+    </Project>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>ZwSoft.ZwCAD.ZRXWizard, Version=25.0.550.0, Culture=neutral, PublicKeyToken=e09446009d37e100</Assembly>
+    <FullClassName>ZwSoft.ZwCAD.ZRXVCWizard</FullClassName>
+  </WizardExtension> 
+</VSTemplate>

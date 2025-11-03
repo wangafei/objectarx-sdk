@@ -1,0 +1,55 @@
+﻿
+#ifndef _ZIDRELVER_H
+#define _ZIDRELVER_H
+#include "zid.h"
+
+#define VALUE2STR(x) #x
+#define ID2STR(a) ID2STR__1(a)
+#define ID2STR__1(a) VALUE2STR(a)
+
+#define ZCADV_RCFILEVER1 ZCADV_RELMAJOR
+#define ZCADV_RCFILEVER2 ZCADV_RELMINOR
+
+#define ZCADV_RCFILEVER1_CORRECTION (6 + ZCADV_RCFILEVER1)
+
+#if defined(_MSC_VER) || defined(UNICODE)
+
+#define ZCADV_VERNAME ZCRX_T(ID2STR(ZCADV_RELMAJOR)) ZCRX_T(".") \
+                      ZCRX_T(ID2STR(ZCADV_RELMINOR))
+#else
+
+#define ZCADV_VERNAME ID2STR(ZCADV_RELMAJOR) "." \
+                      ID2STR(ZCADV_RELMINOR)
+#endif
+
+#define ZCAD_COPYRIGHT    "Copyright 2024 ZwSoft, Inc.  All rights reserved."
+#define ZCAD_COPYRIGHT_YEAR   "2024"
+
+#define ZCAD_TLBVERSION_MAJOR   1
+#define ZCAD_TLBVERSION_MINOR   0
+#define ZCAD_TLBVERSION         ZCAD_TLBVERSION_MAJOR.ZCAD_TLBVERSION_MINOR
+
+#ifdef _MSC_VER
+
+#define ZCAD_TLBVERSIONSTR      ZCRX_T(ID2STR(ZCAD_TLBVERSION_MAJOR)) ZCRX_T(".") \
+                                ZCRX_T(ID2STR(ZCAD_TLBVERSION_MINOR))
+#else
+
+#define ZCAD_TLBVERSIONSTR      ID2STR(ZCAD_TLBVERSION_MAJOR) "." \
+                                ID2STR(ZCAD_TLBVERSION_MINOR)
+#endif
+
+#define ZCDB_TLBVERSION_MAJOR   1
+#define ZCDB_TLBVERSION_MINOR   0
+#define ZCDB_TLBVERSION         ZCDB_TLBVERSION_MAJOR.ZCDB_TLBVERSION_MINOR
+
+#ifdef _MSC_VER
+
+#define ZCDB_TLBVERSIONSTR      ZCRX_T(ID2STR(ZCDB_TLBVERSION_MAJOR)) ZCRX_T(".") \
+                                ZCRX_T(ID2STR(ZCDB_TLBVERSION_MINOR))
+#else
+
+#define ZCDB_TLBVERSIONSTR      ID2STR(ZCDB_TLBVERSION_MAJOR) "." \
+                                ID2STR(ZCDB_TLBVERSION_MINOR)
+#endif
+#endif

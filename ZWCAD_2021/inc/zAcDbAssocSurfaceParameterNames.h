@@ -1,0 +1,33 @@
+#pragma once
+
+const ZcString kOffsetDistanceParamName    = _T("OffsetDistance");
+const ZcString kContinuityParamName        = _T("Continuity");
+const ZcString kBulgeParamName             = _T("Bulge");
+const ZcString kRevolveAngleParamName      = _T("RevolveAngle");
+const ZcString kRotationAngleParamName     = _T("RotationAngle");
+const ZcString kScaleFactorParamName       = _T("ScaleFactor");
+const ZcString kTwistAngleParamName        = _T("TwistAngle");
+const ZcString kExtrusionHeightParamName   = _T("ExtrusionHeight");
+const ZcString kExtendDistanceParamName    = _T("ExtendDistance");
+const ZcString kFilletRadiusParamName      = _T("FilletRadius");
+const ZcString kChamferDistanceParamName   = _T("ChamferDistance");
+const ZcString kExtrusionTaperAngle        = _T("ExtrusionTaperAngle");
+const ZcString kFilletInputFace1ParamName  = _T("InputFace1");
+const ZcString kFilletInputFace2ParamName  = _T("InputFace2");
+const ZcString kBlendStartProfileParamName = _T("BlendStartProfile");
+const ZcString kBlendEndProfileParamName   = _T("BlendEndProfile");
+const ZcString kExtendEdgesParamName       = _T("ExtendEdges");
+const ZcString kExtrudeProfileParamName    = _T("ExtrudeProfile");
+const ZcString kLoftCrossSectionName       = _T("CrossSection");
+const ZcString kLoftGuideCurveName         = _T("GuideCurve");
+const ZcString kLoftPathCurveName          = _T("PathCurve");
+const ZcString kRevolveProfileParamName    = _T("RevolveProfile");
+const ZcString kRevolvePathParamName       = _T("RevolvePath");
+const ZcString kSweepProfileParamName      = _T("SweepProfile");
+const ZcString kSweepPathParamName         = _T("SweepPath");
+const ZcString kOffsetBodyParamName        = _T("OffsetBody");
+const ZcString kPatchProfileParamName      = _T("PatchProfile");
+const ZcString kPatchConstraintParamName   = _T("PatchConstraint");
+const ZcString kTrimToolFaceParamName      = _T("TrimmingFace");
+const ZcString kTrimToolPathParamName      = _T("TrimmingPath");
+const ZcString kEdgeFilletChamferParamName = _T("FilletChamferEdge");

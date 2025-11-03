@@ -1,0 +1,13 @@
+﻿/////////////////////////////////////////////////////////////////////////////////////////
+//
+// Please refer to "COPYRIGHT.md" for the relevant copyright statement of this software.
+//
+/////////////////////////////////////////////////////////////////////////////////////////
+//
+#pragma once
+#include "../../inc/graph.h"
+#include "dbmain.h"
+
+#define AcDbGraphNode GcDbGraphNode
+#define AcDbGraph GcDbGraph
+#define AcDbGraphStack GcDbGraphStack

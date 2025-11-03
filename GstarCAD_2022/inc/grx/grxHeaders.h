@@ -1,0 +1,111 @@
+#pragma once
+
+#include "gcadstd.h"
+#include "dbxHeaders.h"
+
+#pragma pack (push, 8)
+#pragma warning (disable: 4311 4312 4275)
+
+#include "../Ed/EdCommandStack.h"
+#include "gced.h"
+#include "gcdocman.h"
+#include "GcApDMgr.h"
+#include "gctrans.h"
+#include "lngtrans.h"
+#include "gcaplmgr.h"
+#include "gcedxref.h"
+#include "../DbLongTransaction.h"
+#include "../DbLayoutManager.h"
+#include "gcedinet.h"
+#include "gcedinpt.h"
+
+#include "dbjig.h"
+#include "../DbMPolygon.h"
+#include "../DbMatchProperties.h"
+#include "DbOsnap.h"
+#include "dbInterferencePE.h"
+
+#include "gs.h"	
+#include "GcGsManager.h"
+
+#include "gcdmmapi.h"
+
+#ifdef _AFXEXT
+#pragma warning (disable: 4275)
+#include "gdui.h"
+#include "GcExtensionModule.h"
+#include "gduiBaseDialog.h"
+#include "gduiButton.h"
+#include "gduiComboBox.h"
+#include "gduiDialog.h"
+#include "gduiDialogBar.h"
+#include "gduiDialogWorksheet.h"
+#include "gduiDock.h"
+#include "gduiDropTarget.h"
+#include "gduiEdit.h"
+#include "gduiFileDialog.h"
+#include "gduiHeaderCtrl.h"
+#include "gduiListBox.h"
+#include "gduiListCtrl.h"
+#include "gduiMessage.h"
+#include "gduiPalette.h"
+#include "gduiPaletteSet.h"
+#include "gduiPathname.h"
+#include "gduiRegistryAccess.h"
+#include "gduiTabChildDialog.h"
+#include "gduiTabCtrl.h"
+#include "gduiTabExtension.h"
+#include "gduiTabMainDialog.h"
+#include "gduiTextTip.h"
+#include "gduiTheme.h"
+#include "gduiThemeManager.h"
+#include "gduiVolumeDescriptor.h"
+
+#include "gcui.h"
+#include "rxmfcapi.h"
+//#include "GcStatusBar.h"
+#include "gcuiButton.h"
+#include "gcuiComboBox.h"
+#include "gcuiDialog.h"
+#include "gcuiDialogWorksheet.h"
+#include "gcuidock.h"
+#include "gcuiEdit.h"
+#include "gcuiHeaderCtrl.h"
+#include "gcuiListBox.h"
+#include "gcuiListCtrl.h"
+#include "gcuiNavDialog.h"
+#include "gcuiPathname.h"
+#include "gcuiString.h"
+#include "gcuiTabCtrl.h"
+#endif
+
+#include "ol_errno.h"
+
+#include "gdsdlg.h"
+#include "gdsrxdef.h"
+#include "gdslib.h"
+
+#include "grxEntryPoint.h"
+#include "gcssgetfilter.h"
+
+
+#include "GcPl.h"
+#include "GcPlDSDData.h"
+#include "GcPlDSDEntry.h"
+#include "GcPlObject.h"
+#include "GcPlPlotConfig.h"
+#include "GcPlPlotConfigInfo.h"
+#include "GcPlPlotConfigManager.h"
+#include "GcPlPlotEngine.h"
+#include "GcPlPlotErrorHandler.h"
+#include "GcPlPlotFactory.h"
+#include "GcPlPlotInfo.h"
+#include "GcPlPlotInfoValidator.h"
+#include "GcPlPlotLoggingErrorHandler.h"
+#include "GcPlPlotPageInfo.h"
+#include "GcPlPlotProgress.h"
+#include "GcPlPlotReactor.h"
+#include "GcPlPlotReactorMgr.h"
+#include "GcPlPrecisionEntry.h"
+
+#pragma pack (pop)

@@ -1,0 +1,14 @@
+﻿/////////////////////////////////////////////////////////////////////////////////////////
+//
+// Please refer to "COPYRIGHT.md" for the relevant copyright statement of this software.
+//
+/////////////////////////////////////////////////////////////////////////////////////////
+//
+#pragma once
+
+#include "GcFdUiFormatList.h"
+
+class GCFDUI_PORT CGcFdUiFieldFormatList : public CGcFdUiFormatList
+{
+  DECLARE_DYNAMIC(CGcFdUiFieldFormatList)
+};

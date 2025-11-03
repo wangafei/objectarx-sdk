@@ -1,0 +1,14 @@
+﻿/////////////////////////////////////////////////////////////////////////////////////////
+//
+// Please refer to "COPYRIGHT.md" for the relevant copyright statement of this software.
+//
+/////////////////////////////////////////////////////////////////////////////////////////
+//
+#pragma once
+#include "../../inc/gelent2d.h"
+
+#include "gecurv2d.h"
+#include "gepnt2d.h"
+#include "gevec2d.h"
+
+#define AcGeLinearEnt2d GcGeLinearEnt2d

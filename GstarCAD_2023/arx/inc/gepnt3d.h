@@ -1,0 +1,12 @@
+﻿/////////////////////////////////////////////////////////////////////////////////////////
+//
+// Please refer to "COPYRIGHT.md" for the relevant copyright statement of this software.
+//
+/////////////////////////////////////////////////////////////////////////////////////////
+//
+#pragma once
+#include "../../inc/gepnt3d.h"
+
+#include "gevec3d.h"
+#define AcGePoint3d GcGePoint3d
+#define ADSK_ACGEPOINT3D_DEFINED GSFT_GCGEPOINT3D_DEFINED

@@ -1,0 +1,60 @@
+﻿
+#ifndef AECMODELER_INC_PLANE_H
+#define AECMODELER_INC_PLANE_H
+
+#include "zpoint3d.h"
+
+AECMODELER_NAMESPACE_BEGIN
+
+class DllImpExp ZwPlane
+{
+public:
+    ZwPlane() : normal(ZwVector3d::kNull), d(0.0) {}
+    ZwPlane(ZwVector3d nn, double dd) : normal(nn), d(dd) {}
+    ZwPlane(ZwPoint3d, ZwVector3d);
+    ZwPlane(const ZwPoint3d&, const ZwPoint3d&, const ZwPoint3d&);
+    ZwPlane(const ZwPoint3d&, const ZwVector3d&, const ZwVector3d&);
+
+    ZwPlane(const ZwPoint3d plg[], int n);
+
+    ZwPlane(const ZwPoint3d plg[], int n, const ZwVector3d& norm);
+
+    static ZwPlane fromPoints(const ZwPoint3d pts[], int pointCount, bool checkPlanarity);
+
+    ZwPlane operator -() const { return ZwPlane(-normal, -d); }
+    double dist(ZwPoint3d p) const { return p % normal + d; }
+
+    ZwPoint3d project(const ZwPoint3d&) const;
+    ZwVector3d project(const ZwVector3d&) const;
+    ZwLine3d project(const ZwLine3d&) const;
+
+    //求交
+    ZwLine3d operator *(const ZwPlane&) const;
+    ZwPoint3d operator *(const ZwLine3d&) const;
+
+    bool isValid() const { return fabs(normal.length() - 1) < ZwEpsNor(); }
+
+    bool isEqual(ZwPlane) const;
+
+    void orthoPlane(int& i1, int& i2) const;
+    void orthoPlane(int& i1, int& i2, int& i3) const;
+
+    ZwVector3d normal;
+    double d;
+};
+
+inline ZwPlane::ZwPlane(ZwPoint3d p, ZwVector3d norm)
+  : normal(norm)
+{
+    normal = normal.normalize();
+    d = -p % normal;
+}
+
+inline bool ZwPlane::isEqual(ZwPlane pla) const
+{
+    return normal.isEqual(pla.normal) && fabs(d - pla.d) <= ZwEpsAbs();
+}
+
+AECMODELER_NAMESPACE_END
+
+#endif

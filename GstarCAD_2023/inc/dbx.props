@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.17763.0</_ProjectFileVersion>
+    <_PropertySheetDisplayName>Dbx settings</_PropertySheetDisplayName>
+    <TargetExt>.dbx</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Link>
+      <AdditionalDependencies>gcbase.lib;gcdb.lib;GcModelDocObj.lib;GcDbPointCloudObj.lib;GcDbConstraints.lib;gcdyn.lib;GcGeolocationObj.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+</Project>

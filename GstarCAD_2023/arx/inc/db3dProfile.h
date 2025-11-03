@@ -1,0 +1,13 @@
+﻿/////////////////////////////////////////////////////////////////////////////////////////
+//
+// Please refer to "COPYRIGHT.md" for the relevant copyright statement of this software.
+//
+/////////////////////////////////////////////////////////////////////////////////////////
+//
+#pragma once
+#include "../../inc/db3dProfile.h"
+#include "dbsurf.h"
+#include "AcDbGeomRef.h"
+
+#define AcDb3dProfile GcDb3dProfile
+#define AcDbLoftProfile GcDbLoftProfile

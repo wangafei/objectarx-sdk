@@ -1,0 +1,15 @@
+﻿/////////////////////////////////////////////////////////////////////////////////////////
+//
+// Please refer to "COPYRIGHT.md" for the relevant copyright statement of this software.
+//
+/////////////////////////////////////////////////////////////////////////////////////////
+//
+#ifndef   __IDVER_H
+#define   __IDVER_H
+
+#define GCADV_BLDSTREAM Q
+#define GCADV_BLDMAJOR  47  
+#define GCADV_BLDMINOR  0   
+#define GCADV_BLDBRANCH 0   
+
+#endif

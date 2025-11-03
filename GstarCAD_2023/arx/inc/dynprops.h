@@ -1,0 +1,12 @@
+﻿/////////////////////////////////////////////////////////////////////////////////////////
+//
+// Please refer to "COPYRIGHT.md" for the relevant copyright statement of this software.
+//
+/////////////////////////////////////////////////////////////////////////////////////////
+//
+#pragma once
+#include "../../inc/dynprops.h"
+#include "adesk.h"
+#include "AdAChar.h"
+#include "acdbport.h"
+#include "dynprops-AcFilterablePropertyContext.h"

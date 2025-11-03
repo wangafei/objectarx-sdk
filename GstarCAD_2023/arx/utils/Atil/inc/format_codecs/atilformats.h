@@ -1,0 +1,14 @@
+﻿/////////////////////////////////////////////////////////////////////////////////////////
+//
+// Please refer to "COPYRIGHT.md" for the relevant copyright statement of this software.
+//
+/////////////////////////////////////////////////////////////////////////////////////////
+//
+#pragma once
+#include "../../../../../utils/Gtil/inc/format_codecs/gtilformats.h"
+
+#ifndef Atil
+#define Atil Gtil
+#endif
+
+#define AtilFormatCodecLibrary GtilFormatCodecLibrary

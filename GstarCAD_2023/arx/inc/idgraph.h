@@ -1,0 +1,13 @@
+﻿/////////////////////////////////////////////////////////////////////////////////////////
+//
+// Please refer to "COPYRIGHT.md" for the relevant copyright statement of this software.
+//
+/////////////////////////////////////////////////////////////////////////////////////////
+//
+#pragma once
+#include "../../inc/idgraph.h"
+#include "graph.h"
+#include "dbidmap.h"
+
+#define AcDbObjectIdGraphNode GcDbObjectIdGraphNode
+#define AcDbObjectIdGraph GcDbObjectIdGraph

@@ -1,0 +1,14 @@
+﻿/////////////////////////////////////////////////////////////////////////////////////////
+//
+// Please refer to "COPYRIGHT.md" for the relevant copyright statement of this software.
+//
+/////////////////////////////////////////////////////////////////////////////////////////
+//
+#pragma once
+#include "../../inc/geoffsf.h"
+
+#include "gegbl.h"
+#include "gepnt3d.h"
+#include "gesurf.h"
+
+#define AcGeOffsetSurface GcGeOffsetSurface

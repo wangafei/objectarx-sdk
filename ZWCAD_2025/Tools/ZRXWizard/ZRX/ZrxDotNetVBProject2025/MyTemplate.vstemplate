@@ -1,0 +1,35 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>ZRX .NET project for ZWCAD2025</Name>
+    <Description>Create ZRX .NET project for ZWCAD2025</Description>
+    <ProjectType>VisualBasic</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>ZrxDotNetVBProject</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>ZRX.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="ZrxDotNetVBProject.vbproj" File="ZrxDotNetVBProject.vbproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="Commands.vb">Commands.vb</ProjectItem>
+      <Folder Name="My Project" TargetFolderName="My Project">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Application.myapp">Application.myapp</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Application.Designer.vb">Application.Designer.vb</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.vb">AssemblyInfo.vb</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Resources.resx">Resources.resx</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Resources.Designer.vb">Resources.Designer.vb</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Settings.settings">Settings.settings</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Settings.Designer.vb">Settings.Designer.vb</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="PluginApplication.vb">PluginApplication.vb</ProjectItem>
+    </Project>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>ZwSoft.ZwCAD.ZRXWizard, Version=25.0.550.0, Culture=neutral, PublicKeyToken=e09446009d37e100</Assembly>
+    <FullClassName>ZwSoft.ZwCAD.ZRXWizard</FullClassName>
+  </WizardExtension>
+</VSTemplate>

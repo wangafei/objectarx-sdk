@@ -1,0 +1,29 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>ZRX .NET project for ZWCAD2025</Name>
+    <Description>Create ZRX .NET project for ZWCAD2025 with c#</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>ZrxDotNetCSProject</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>ZRX.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="ZrxDotNetCSProject.csproj" File="ZrxDotNetCSProject.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="Commands.cs">Commands.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="PlugInApplication.cs">PlugInApplication.cs</ProjectItem>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>ZwSoft.ZwCAD.ZRXWizard, Version=25.0.550.0, Culture=neutral, PublicKeyToken=e09446009d37e100</Assembly>
+    <FullClassName>ZwSoft.ZwCAD.ZRXWizard</FullClassName>
+  </WizardExtension>
+</VSTemplate>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30306.1</_ProjectFileVersion>
+    <_PropertySheetDisplayName>Dbx settings</_PropertySheetDisplayName>
+    <TargetExt>.dbx</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Link>
+      <AdditionalDependencies>Td_Root.lib;Td_DbRoot.lib;Td_Db.lib;Td_Ge.lib;Td_Gi.lib;Td_Gs.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+</Project>

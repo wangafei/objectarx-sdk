@@ -1,0 +1,17 @@
+﻿/////////////////////////////////////////////////////////////////////////////////////////
+//
+// Please refer to "COPYRIGHT.md" for the relevant copyright statement of this software.
+//
+/////////////////////////////////////////////////////////////////////////////////////////
+//
+#ifndef _gds_db_h
+#define _gds_db_h 1
+
+#ifndef DISABLE_OLD_GDS_NAMES
+#include "gdsmigr.h"
+#endif  
+
+#include "gcdbgds.h"
+#include "gcutgds.h"
+
+#endif 

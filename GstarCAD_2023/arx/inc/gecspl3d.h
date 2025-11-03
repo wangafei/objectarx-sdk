@@ -1,0 +1,13 @@
+﻿/////////////////////////////////////////////////////////////////////////////////////////
+//
+// Please refer to "COPYRIGHT.md" for the relevant copyright statement of this software.
+//
+/////////////////////////////////////////////////////////////////////////////////////////
+//
+#pragma once
+#include "../../inc/gecspl3d.h"
+#include "gesent3d.h"
+#include "gept3dar.h"
+#include "gevc3dar.h"
+#include "gevec3d.h"
+#include "gekvec.h"

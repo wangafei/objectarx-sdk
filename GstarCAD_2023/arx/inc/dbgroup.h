@@ -1,0 +1,13 @@
+﻿/////////////////////////////////////////////////////////////////////////////////////////
+//
+// Please refer to "COPYRIGHT.md" for the relevant copyright statement of this software.
+//
+/////////////////////////////////////////////////////////////////////////////////////////
+//
+#pragma once
+#include "../../inc/dbgroup.h"
+#include "dbmain.h"
+#include "dbapserv.h"
+
+#define AcDbGroup GcDbGroup
+#define AcDbGroupIterator GcDbGroupIterator

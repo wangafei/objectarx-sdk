@@ -1,0 +1,19 @@
+﻿#ifndef ZRX_AECMODELER_INC_DEVIAT_H
+#define ZRX_AECMODELER_INC_DEVIAT_H
+
+#include "global.h"
+
+#include "../../../../utils/amodeler/inc/zdeviat.h"
+
+#ifndef AModeler
+#define AModeler    AECModeler
+#endif //#ifndef AModeler
+
+#ifndef deviationToApprox
+#define deviationToApprox    ZwDeviationToApprox
+#endif //#ifndef deviationToApprox
+
+
+
+#endif
+

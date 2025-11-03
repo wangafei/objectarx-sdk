@@ -1,0 +1,13 @@
+#pragma once
+
+#define	AcDbRasterImageDef 	GcDbRasterImageDef
+#define	GcDbRasterImageDef 	OdDbRasterImageDef
+#define	AcDbRasterImageDefReactor 	GcDbRasterImageDefReactor
+#define	GcDbRasterImageDefReactor 	OdDbRasterImageDefReactor
+#define	AcDbRasterImageDefTransReactor 	GcDbRasterImageDefTransReactor
+#define	GcDbRasterImageDefTransReactor 	OdDbRasterImageDefTransReactor
+#define	AcDbRasterImageDefFileAccessReactor 	GcDbRasterImageDefFileAccessReactor
+#define	GcDbRasterImageDefFileAccessReactor 	OdDbRasterImageDefFileAccessReactor
+
+#include "../DbRasterImageDef.h"
+

@@ -1,0 +1,13 @@
+﻿/////////////////////////////////////////////////////////////////////////////////////////
+//
+// Please refer to "COPYRIGHT.md" for the relevant copyright statement of this software.
+//
+/////////////////////////////////////////////////////////////////////////////////////////
+//
+#pragma once
+#include "../../inc/GcPlPlotFactory.h"
+#include "AcPl.h"
+#include "adesk.h"
+#include "acadstrc.h"
+#define AcPlPlotFactory GcPlPlotFactory
+#define acplProcessPlotState          gcplProcessPlotState

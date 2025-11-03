@@ -1,0 +1,15 @@
+﻿/////////////////////////////////////////////////////////////////////////////////////////
+//
+// Please refer to "COPYRIGHT.md" for the relevant copyright statement of this software.
+//
+/////////////////////////////////////////////////////////////////////////////////////////
+//
+#pragma once
+#include "adesk.h"
+#include "assert.h"
+
+#include "acarray.h"
+#include "../../inc/dbintar.h"
+
+#define AcDbIntArray GcDbIntArray
+#define AcDbIntPtrArray GcDbIntPtrArray

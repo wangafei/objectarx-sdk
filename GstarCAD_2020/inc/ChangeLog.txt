@@ -1,0 +1,68 @@
+BUILD 131125
+-------------------------------------------------------------------------
+- EXT: Add an internal database services to the OdGsBaseModel class.
+- MOD: Gs/GsBaseModel.h
+
+BUILD 131118
+-------------------------------------------------------------------------
+- BUG: The "MYDOCUMENTSPREFIX","LOCALROOTPREFIX" and "ROAMABLEROOTPREFIX"
+       system variables should return the corresponding PATH  instead of
+       empty string.
+- MOD: SysVarDefs.h
+
+- BUG: Fixed some known bugs of the OPM interface.
+- MOD: GCADVba.tlb
+       /arx/acpi.h
+       /arx/axtempl.h
+       /grx/axtempl.h
+       /grx/dynpropmgr.h
+       /grx/gcpi.h
+       /grx/oleaprot.h
+       /grx/opmimp.h
+
+- BUG: Fixed link error: unresolved external symbol: gcdbQueueForRegen.
+- MOD: grx/dbxutil.h
+
+- BUG: Suppress unused variable warning.
+- MOD: grx/dbxEntryPoint.h
+
+
+- BUG: Change the default value of "BPARAMETERFONT" system variable to
+       "Arial".
+- MOD: SysVarDefs.h
+
+- NEW: Fade on locked layers and xref blocks.
+- MOD: /Gi/GiIndirectEntityAccessor.h
+       /Gi/GiLayerTraitsData.h
+       /Gi/GiNonEntityTraits.h
+       /Gs/GsBaseModel.h
+       /Gs/GsBaseVectorizer.h
+       /Gs/GsBlockReferenceNode.h
+       /Gs/GsEntityNode.h
+       /Gs/GsModel.h
+
+- NEW: Implements OdDbLeader::getClosestPointTo().
+- MOD: DbLeader.h
+
+- NEW: Add some hatch builder functions for internal use.
+- MOD: /Ge/GeCompositeCurve2d.h
+       /Ge/GeHatchBuilder.h
+
+- BUG: Compatibility improvements of OdDbDimension and OdDbDatabase.
+- MOD: DbDimension.h
+       DbDatabase.h
+
+- BUG: Compatibility improvements of OdEdCommandStack.
+- MOD: EdCommandStack.h
+
+- NEW: Add some new member functions of OdDbAbstractViewportData.
+- MOD: DbAbstractViewportData.h
+       DbAbstractViewportDataForDbViewTabRec.h
+       DbAbstractViewportDataForDbViewport.h
+       DbAbstractViewportDataForDbVpTabRec.h
+
+- NEW: New system varialbles: "HPCOLOR", "HPBACKGROUNDCOLOR"
+- MOD: SysVarDefs.h
+
+BUILD 131022
+-------------------------------------------------------------------------

@@ -1,0 +1,12 @@
+﻿/////////////////////////////////////////////////////////////////////////////////////////
+//
+// Please refer to "COPYRIGHT.md" for the relevant copyright statement of this software.
+//
+/////////////////////////////////////////////////////////////////////////////////////////
+//
+#pragma once
+#include "../../inc/dbfilter.h"
+#include "dbmain.h"
+
+#define AcDbFilteredBlockIterator GcDbFilteredBlockIterator
+#define AcDbFilter GcDbFilter
