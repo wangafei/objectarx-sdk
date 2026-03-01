@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ImportGroup Label="PropertySheets">
+		<Import Condition="'$(ArxAppType)'=='dbxnet' or '$(ArxAppType)'=='crxnet' or '$(ArxAppType)'=='arxnet'" Project="grx-net.props" />
+	</ImportGroup>
+  <PropertyGroup Label="UserMacros">
+    <grxsdk_dir>$(objectarx-sdk)GstarCAD_2022\</grxsdk_dir>
+	<ArxSdkIncs Condition="'$(Platform)'=='x64'">$(grxsdk_dir)arx\inc;$(grxsdk_dir)arx\inc-x64</ArxSdkIncs>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetExt>.grx</TargetExt>
+  </PropertyGroup>
+	<PropertyGroup>
+		<!-- ExecutablePath>$(ExecutablePath)</ExecutablePath -->
+		<IncludePath>$(ArxSdkIncs);$(ArxHlrIncs);$(ArxAmodelerIncs);$(ArxBrepIncs);$(ArxAtilIncs);$(IncludePath)</IncludePath>
+		<ReferencePath>$(ArxSdkIncs);$(ReferencePath)</ReferencePath>
+		<LibraryPath>$(ArxSdkLibs);$(ArxHlrLibs);$(ArxAmodelerLibs);$(ArxBrepLibs);$(ArxLibIncs);$(LibraryPath)</LibraryPath>
+		<!-- SourcePath>$(SourcePath)</SourcePath -->
+		<!-- ExcludePath>$(ExcludePath)</ExcludePath -->
+	</PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(grxsdk_dir)arx\inc-x64;$(grxsdk_dir)arx\inc</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0600;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+	 <PreprocessorDefinitions Condition="'$(ArxAppType)'=='arx' or '$(ArxAppType)'=='arxnet'">_ACRXAPP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+	 <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+	 <AdditionalUsingDirectories>$(grxsdk_dir)\inc-$(Platform);%(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(grxsdk_dir)lib-$(PlatformName)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>AecModeler.lib;gcad.lib;gcax.lib;gcbase.lib;gcbr.lib;gccore.lib;gcdb.lib;GcDbConstraints.lib;GcDbPointCloudObj.lib;gcdyn.lib;GcGeolocationObj.lib;gcgs.lib;GcHlrApi.lib;GcImaging.lib;GcModelDocObj.lib;gmdb.lib;gplot.lib;</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <BuildMacro Include="grxsdk_dir">
+      <Value>$(grxsdk_dir)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>

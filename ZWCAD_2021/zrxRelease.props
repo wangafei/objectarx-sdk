@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ImportGroup Label="PropertySheets">
+		<Import Condition="'$(ArxAppType)'=='dbxnet' or '$(ArxAppType)'=='crxnet' or '$(ArxAppType)'=='arxnet'" Project="zrx-net.props" />
+	</ImportGroup>
+  <PropertyGroup Label="UserMacros">
+    <zrxsdk_dir>$(objectarx-sdk)ZWCAD_2021\</zrxsdk_dir>
+	<ArxSdkIncs Condition="'$(Platform)'=='x64'">$(zrxsdk_dir)\inc;$(ArxSdkDir)\inc-x64</ArxSdkIncs>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetExt>.zrx</TargetExt>
+  </PropertyGroup>
+	<PropertyGroup>
+		<!-- ExecutablePath>$(ExecutablePath)</ExecutablePath -->
+		<IncludePath>$(ArxSdkIncs);$(ArxHlrIncs);$(ArxAmodelerIncs);$(ArxBrepIncs);$(ArxAtilIncs);$(IncludePath)</IncludePath>
+		<ReferencePath>$(ArxSdkIncs);$(ReferencePath)</ReferencePath>
+		<LibraryPath>$(ArxSdkLibs);$(ArxHlrLibs);$(ArxAmodelerLibs);$(ArxBrepLibs);$(ArxLibIncs);$(LibraryPath)</LibraryPath>
+		<!-- SourcePath>$(SourcePath)</SourcePath -->
+		<!-- ExcludePath>$(ExcludePath)</ExcludePath -->
+	</PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(zrxsdk_dir)inc;$(zrxsdk_dir)arxport\inc-x64;$(zrxsdk_dir)arxport\inc</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_WIN32_WINNT=0x0600;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+	 <PreprocessorDefinitions Condition="'$(ArxAppType)'=='arx' or '$(ArxAppType)'=='arxnet'">_ACRXAPP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+	 <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+	 <AdditionalUsingDirectories>$(zrxsdk_dir)\inc-$(Platform);%(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(zrxsdk_dir)lib-$(PlatformName)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ZWCAD.lib;ZwAuto.lib;ZwZrx.lib;ZwDatabase.lib;ZwRx.lib;ZwGeometry.lib;ZwdUI.lib;ZwUI.lib;ZwBase.lib;ZwGs.lib;ZwPAL.lib;ZwTc.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <BuildMacro Include="zrxsdk_dir">
+      <Value>$(zrxsdk_dir)</Value>
+    </BuildMacro>
+  </ItemGroup>
+</Project>
